@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Form Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label>Nama Customer</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control" required maxlength="40" minlength="3">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email Aktif" class="form-control">
+                <small id="emailHelp" class="form-text text-muted">Email</small>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" name="Password" placeholder="Alamat" class="form-control" required maxlength="40" minlength="7">
+            </div>
+            <div class="form-group">
+                <label>Pekerjaan</label>
+                <input type="text" name="pekerjaan" placeholder="Nama lengkap" class="form-control" required maxlength="40" minlength="3">
+            </div>
+            <label>Tempat </label>
+            <input type="text" name="Tempat" placeholder="Tempat" class="form-control">
+            <label>Tgl Lahir</label>
+            <input type="date" value="2020-02-02" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+           
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            if (document.forms["formPendaftaran"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["password"].value == "") {
+                alert("Password Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["password"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["pekerjaan"].value == "") {
+                alert("Pekerjaan Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["pekerjaan"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["Tempat"].value == "") {
+                alert("Alamat Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["Tempat"].focus();
+                return false;
+            }
+
+        }
+    </script>
+</body>
+</html>

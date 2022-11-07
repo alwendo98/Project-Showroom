@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <script src="https://kit.fontawesome.com/b67e368fa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous">
+    <title>Showroom Motor</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="landing-page.html">
+                        <img src="img/Logo.jpg" alt="" width="180px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav m-auto">
+                            <a class="nav-link" href="#products">Home</a>
+                            <a class="nav-link" href="produk.html">Produk Motor</a>
+                            <a class="nav-link" href="promo.html">Promo</a>
+                            <a class="nav-link" href="latihan.html">About</a>
+                            <a class="nav-link" href="Contact.html">Tentang Kami</a>
+                        </div>
+                        <div class="btn">
+                            
+                            <a href="registrasi.html" class="btn btn-primary">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+   </body>
+   <style>
+    .navbar ul li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  padding-right: 20px;
+  background-color: white;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #122363;
+}
+.navbar ul li a:hover {
+  color: rgb(247, 143, 7);
+}
+
+.main {
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+.content {
+  /* background-color: #e3e9ff; */
+  width: 70%;
+  /* height: 1000px; */
+  /* display: flex; */
+  text-align: justify;
+  /* padding-top: 50px; */
+  padding: 15px 15px 15px 15px;
+  margin: 0;
+  /* margin-left: 25px; */
+}
+
+.sidebar {
+  background-color: #122363;
+  width: 30%;
+  height: 90vh;
+  padding: 17px 10px 10px 10px;
+  /* display: flex; */
+  /* border: 1px solid black; */
+  /* display: inline-block; */
+  /* margin-left: -4px; */
+  flex-direction: column;
+  display: none;
+}
+
+.card-order {
+  width: 91%;
+  height: 50px;
+  margin: 10px 10px 10px 15px;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  /* justify-content: stretch; */
+  -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+}
+
+.card-order img {
+  width: 50px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.card-order p {
+  padding: 10px;
+  font-size: 17px;
+  width: 70%;
+  font-weight: 500;
+  color: #4e4e4e;
+  text-align: left;
+}
+
+.card-order span {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4e4e4e;
+  width: 1%;
+}
+
+.card-order button {
+  background-color: rgb(214, 11, 11);
+  border-radius: 10px;
+  padding: 0;
+  margin: 10px 0px 10px 20px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: whitesmoke;
+  font-weight: 500;
+  align-items: flex-end;
+}
+
+.card-order button:hover {
+  background-color: rgb(163, 12, 12);
+}
+
+.card {
+  width: 280px;
+  height: max-content;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+  width: 92%;
+  height: 80%;
+  margin: 10px 10px 0px 10px;
+  border-radius: 10px;
+  /* display: flex; */
+}
+
+.card p {
+  margin-left: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Mulish", sans-serif;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+
+.card hr {
+  margin: 10px;
+  color: #b8b8b8;
+  border-color: #e2e1e1;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 10px 10px;
+}
+
+.order span {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.card-finish button {
+  border: none;
+  text-align: center;
+  width: 90%;
+  height: 50px;
+  margin: 10px 10px 10px 15px;
+  background-color: rgb(247, 143, 7);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+}
+
+.card-finish button:hover {
+  background-color: rgb(211, 120, 0);
+}
+
+.fas {
+  color: #ffffff;
+}
+
+.action button {
+  background-color: #00b91f;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.action button:hover {
+  background-color: #189e2e;
+}
+
+.total {
+  margin: 0px 10px 20px 15px;
+}
+
+.total h1 {
+  color: white;
+}
+
+.detail {
+  width: 70%;
+  display: flex;
+}
+
+.about {
+  margin-top: 40px;
+  width: 100%;
+  display: inline-block;
+  /* justify-content: center; */
+  text-align: center;
+}
+.about img {
+  width: 300px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.person {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+.person img {
+  border-radius: 00px;
+  width: 600px;
+}
+.person p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.person span {
+  font-size: 14px;
+}
+
+   </style>
+   
+    <main>
+        
+      <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel"
+      data-aos="flip-left">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/cbr.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="img/Vario1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="img/style.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cb1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/new.webp" class="d-block w-100" alt="...">
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+              </section>
+          </div>
+          
+          </div>
+          <div class="btn">
+                            
+            <a href="index.html" class="btn btn-primary">Kembali</a>
+        </div>
+        <div class="table" style="width:400px; margin: auto;">
+          <table id="table-cont" class="table table-striped table-hover">
+          </table>
+      </div>
+      <div class="text-container">
+        <p>Showroom Motor Honda Sepeda motor  Kebutuhan Transportasi
+            Untuk berkendara Masyarakat dalam aktifitas
+            Honda Selalu memproduksi barang yangg & Layanan Bagus
+      
+        </div>
+       
+
+       
+    </main>
+    <footer>
+        <section id="footer" class="container">
+            <div class="footer-title">
+                <img src="img/Logo.jpg" alt="" width="200px">
+            </div>
+            <div class id="Honda">
+                <h5>Honda</h5>
+            </div>
+            <div class="About">
+                <h5>About</h5>
+                <p><a href="about.html"></a></p>
+            </div>
+            <div class="product-bawana">
+                <h5>Contact We</h5>
+                <p><a href="https://www.astra-honda.com/helpcenter/topic/layanan-bengkel/?category=ahass-booking-service">Layanan</a></p>
+                <p><a href="https://www.whatsapp.com/catalog/6282361486989/?app_absent=0">Contact We</a></p>
+                <p><a href="https://www.astra-honda.com/helpcenter/topic/info-oli/?category=ketersediaan">Oli </a></p>
+                
+            </div>
+        </section>
+    </footer>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="transaksi.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>
+
+</html>
